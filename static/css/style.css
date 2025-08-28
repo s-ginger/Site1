@@ -493,6 +493,10 @@ footer {
     display: flex;
 }
 
+.hthree-form > br {
+    display: none;
+}
+
 
 .hero-img {
     position: absolute;
