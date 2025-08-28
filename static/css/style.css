@@ -130,6 +130,7 @@ a {
 
 .nav {
     display: flex;
+    position: relative;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -573,12 +574,13 @@ footer {
 }
 
 #circle-one {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    left: 190px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 81%;   /* относительно ширины родителя */
+  top: 10%;    /* относительно высоты родителя */
+  transform: translateX(-50%); /* чтобы центр совпал */
 }
-
 
 #footer-nav {
     display: none;
@@ -780,8 +782,14 @@ input[type="email"] {
 .second-circle {
     width: 31px;
     height: 31px;
-    left: 45px;
+    left: 20px;
     top: 40px;
+}
+
+
+#circle-one {
+  left: 57%;   /* относительно ширины родителя */
+  top: 10%;    /* относительно высоты родителя */
 }
 
 .form-block {
