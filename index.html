@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./static/img/icons/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+
+
+</head>
+<body>
+    
+    <div class="overlay hidden"></div>
+    <div class="fixed-menu hidden">
+        <div class="fixed-menu-">
+            <img src="./static/img/icons/logo.svg" alt="logo">
+
+            <img id="close" src="./static/img/icons/close.svg" alt="close">
+        </div>
+        <div>
+            <a id="menu-a" href="#">Мероприятия</a>
+            <hr>
+            <a id="menu-a" href="#timetable">Расписание</a>
+            <hr>
+            <a id="menu-a" href="#about_us">О компании</a>
+            <hr>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                
+                <a href="/">
+                    <img src="./static/img/icons/logo.svg" alt="logo">
+                </a>
+                
+                <img class="burger" src="./static/img/icons/burger.svg" alt="">
+                
+                <ul class="menu">
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#timetable">Расписание</a></li>
+                    <li><a href="#about_us">О компании</a></li>
+                </ul>
+       
+                <div id="circle-one" class="yellow-circle"></div>
+                <a id="infofreefit" href="#">info@freefit.com</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <!-- TODO: hero -->
+             <div class="container hero">
+
+
+                <div class="hero-info">
+                    <h1>онлайн тренировки <br> любой сложности</h1>
+                    <h2>>15 тренировок</h2>
+                    <div>
+                        <h6>в области спортивной <br> физиологии и нутрициологии</h6>
+    
+                        <button href="#" class="btn" aria-label="Узнать подробнее о тренировках">Узнать подробнее</button>
+                    </div>
+
+                </div>
+
+                <img class="arrow" src="./static/img/icons/arrow.svg" alt="arrow">
+                <img class="hero-img" src="./static/img/girl.png" alt="girl">
+
+             </div>
+        </section>
+
+        <section id="timetable">
+            <!-- TODO: timetable -->
+             <div class="container">
+                <div class="timetable-text">
+                    <h3>Расписание<br>тренировок</h3>
+                    <h3>22 - 28 июня</h3>
+                </div>
+
+                <div class="card-container">
+                    <!-- 1 block -->
+                    <div class="card-block">
+                        <div class="card">
+                           
+                           
+                            <time datetime="2025-06-22T10:00">22 июня, 10:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/body.svg" alt="body">
+                                <p>Функциональный тренинг</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-large">
+                           
+                            
+                            <time datetime="2025-06-23T10:00">23 июня, 10:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/jump.svg" alt="jump">
+                                <p>Силовой микс</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- 2 block -->
+                    <div class="card-block">
+                        <div class="card card-large">
+                           
+                           
+                            <time datetime="2025-06-22T10:00">24 июня, 10:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/bottle.svg" alt="bottle">
+                                <p>Body sculpt</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                           
+                            <time datetime="2025-06-25T11:00">25 июня, 11:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/heart.svg" alt="heart">
+                                <p>Дыхательные практики</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- 3block -->
+                    <div class="card-block">
+                        <div class="card ">
+                           
+                          
+                            <time datetime="2025-06-26T11:00">26 июня, 11:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/train.svg" alt="train">
+                                <p>L.A.B.</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-large">
+                           
+                        
+                            <time datetime="2025-06-27T10:00">27 июня, 10:00</time>
+
+    
+                            <div>
+                                <img class="card-img" src="./static/img/icons/dumbbells.svg" alt="dumbbells">
+                                <p>Комплексная разминка</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+             </div>
+        </section>
+
+        <section class="mailing ">
+            <!-- TODO: mailing -->
+
+            <div>
+                <div class="yellow-circle second-circle"></div>
+                <h3 class="hthree-form">Подпишитесь <br> на рассылку</h3>
+                <form action="" >
+                    <div class="form-mail">
+                        <div class="form-block">
+                             <input id="email-input" type="email" placeholder="Ваш e-mail">
+                             <div>
+                                <input id="form-checkbox" type="checkbox" checked>
+                                <span>Согласен с обработкой <a href="#" class="a-span">персональных данных</a></span>
+                             </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn">ПОДПИСАТЬСЯ</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+
+
+        </section>
+
+        <section id="about_us">
+            <!-- TODO: about us -->
+
+            <div class="about-company">
+                <div class="container about-us">
+                    <div class="about-block">
+                        <h3>О компании</h3>
+                        <h6>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</h6>
+                        <button type="button" class="btn">Записаться</button>
+                    </div>
+                    
+                    <div class="about-img">
+                        <img src="./static/img/trainer.jpg" alt="trainer">
+                    </div>
+                </div>
+
+                <ul class="benefits-line">
+                  <li>
+                    <h5>Экономия времени</h5>
+                    <h6>Не нужно тратить время на дорогу</h6>
+                  </li>
+                  <li>
+                    <h5>Индивидуальный подход</h5>
+                    <h6>Внимание тренера принадлежит только вам</h6>
+                  </li>
+                  <li>
+                    <h5>Экономия денег</h5>
+                    <h6>Средняя цена одной тренировки — 700₽</h6>
+                  </li>
+                  <li>
+                    <h5>Опытный персонал</h5>
+                    <h6>Стаж работы у наших тренеров от 5 лет</h6>
+                  </li>
+                </ul>
+
+               
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav  id="footer-nav" class="nav">
+                
+                <a href="/">
+                    <img src="./static/img/icons/logo.svg" alt="logo">
+                </a>
+                
+
+                
+                <ul class="menu">
+                    <li><a href="#">Мероприятия</a></li>
+                    <li><a href="#timetable">Расписание</a></li>
+                    <li><a href="#about_us">О компании</a></li>
+                </ul>
+       
+                <div class="yellow-circle"></div>
+                <a id="infofreefit" href="#">info@freefit.com</a>
+            </nav>
+            <div class="footer-info">
+                <span id="prava">© 2022, Все права защищены</span>
+                <a href="/">
+                    <img src="./static/img/icons/logo.svg" alt="logo">
+                </a>
+                <span>Сделано в рамках курса учебной платформы <a href="#" class="a-span">Frontend Blok</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const arrow = document.querySelector('.arrow');
+        const timetable = document.querySelector('#timetable');
+
+
+        arrow.addEventListener("click", () => {
+            timetable.scrollIntoView({ behavior: 'smooth' })
+        })
+    </script>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const close = document.querySelector('#close');
+       
+
+        const listHref = document.querySelectorAll("#menu-a")
+
+        const menu = document.querySelector('.fixed-menu');
+        const overlay = document.querySelector('.overlay');
+
+
+        burger.addEventListener("click", () => {
+            document.body.classList.add("no-scroll");
+            menu.classList.remove("hidden")
+            overlay.classList.remove("hidden")
+        })
+
+        close.addEventListener("click", hideMenu);
+        overlay.addEventListener("click", hideMenu);
+
+        function hideMenu() {
+            document.body.classList.remove("no-scroll"); 
+            menu.classList.add("hidden");                
+            overlay.classList.add("hidden");             
+        }
+
+        listHref.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault(); 
+                hideMenu();        
+            
+                const targetId = link.getAttribute("href"); 
+                if (targetId == "#") {
+                    return
+                }
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: "smooth" }); 
+                }
+            });
+        });
+
+
+    </script>
+
+</body>
+</html>
