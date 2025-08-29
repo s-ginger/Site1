@@ -456,10 +456,10 @@ input[type="checkbox"]:checked::after {
 }
 
 /* 
- *    765px 
+ *    900px - 765px 
  *
  */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
 header {
     margin-top: 20px;
@@ -588,7 +588,9 @@ footer {
 
 
 .fixed-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;   
   top: 0;            
   left: 0;           
@@ -642,7 +644,10 @@ hr {
 
 
 
-@media (max-width: 360px) {
+/*
+ *  680px -  360px
+*/
+@media (max-width: 680px) {
 
 
 h1 {
@@ -736,13 +741,13 @@ section {
     width: 330px;
 }
 
-.fixed-menu {
-    width: 340px;
-}
+/* .fixed-menu {
+    width: 100%;
+} */
 
-.fixed-menu > div {
+/* .fixed-menu > div {
     width: 330px;
-}
+} */
 
 .about-img {
     display: none;
